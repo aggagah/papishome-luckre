@@ -5,6 +5,9 @@ import lokal from "./assets/lokal.png";
 import cycle from "./assets/cycle.png";
 import halal from "./assets/halal.png";
 import alami from "./assets/alami.png";
+import ayam from "./assets/ayam.png";
+import bebek from "./assets/bebek.png";
+import krecek from "./assets/krecek.png";
 
 function App() {
     return (
@@ -37,7 +40,7 @@ function App() {
             </nav>
 
             {/* body */}
-            <div className="bg-body bg-no-repeat bg-cover bg-center bg-opacity-50 h-screen flex justify-center items-center p-large overflow-hidden mt-10">
+            <div className="bg-body bg-no-repeat bg-cover bg-center bg-opacity-50 h-screen flex justify-center items-center p-large overflow-hidden">
                 <div className="w-50 flex-col items-center justify-center">
                     <h1 className="text-bodyText text-center text-5xl">
                         WELCOME
@@ -111,6 +114,28 @@ function App() {
                 </div>
             </div>
             {/* end selaras */}
+            {/* Produk pilihan */}
+            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10" >
+                <div className="w-9/12 mb-10 mx-auto">
+                    <h1 className="text-3xl text-titleSelaras">Produk Pilihan</h1>
+                    <p className="text-pararaphSelaras text-lg">Temukan rasa Nusantara disini</p>
+                </div>
+                <div className="flex justify-evenly w-full mx-auto">
+                    <div>
+                        <img src={krecek} alt="" />
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Krecek Jogja</p>
+                    </div>
+                    <div>
+                        <img src={bebek} alt="" />
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Bebek Ungkep</p>
+                    </div>
+                    <div>
+                        <img src={ayam} alt="" />
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Ayam Kampung</p>
+                    </div>
+                </div>
+            </div>
+            {/* end Produk Pilihan */}
         </div>
     );
 }
