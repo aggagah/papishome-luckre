@@ -115,27 +115,104 @@ function App() {
             </div>
             {/* end selaras */}
             {/* Produk pilihan */}
-            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10" >
+            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
                 <div className="w-9/12 mb-10 mx-auto">
-                    <h1 className="text-3xl text-titleSelaras">Produk Pilihan</h1>
-                    <p className="text-pararaphSelaras text-lg">Temukan rasa Nusantara disini</p>
+                    <h1 className="text-3xl text-titleSelaras">
+                        Produk Pilihan
+                    </h1>
+                    <p className="text-pararaphSelaras text-lg">
+                        Temukan rasa Nusantara disini
+                    </p>
                 </div>
                 <div className="flex justify-evenly w-full mx-auto">
                     <div>
                         <img src={krecek} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Krecek Jogja</p>
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                            Krecek Jogja
+                        </p>
                     </div>
                     <div>
                         <img src={bebek} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Bebek Ungkep</p>
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                            Bebek Ungkep
+                        </p>
                     </div>
                     <div>
                         <img src={ayam} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">Ayam Kampung</p>
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                            Ayam Kampung
+                        </p>
                     </div>
                 </div>
             </div>
             {/* end Produk Pilihan */}
+
+            {/* detail produk*/}
+            <div className="bg-bodySelaras w-screen h-auto p-10">
+                {/* title */}
+                <div className="w-7/12 mb-5 mx-auto flex justify-start">
+                    <h1 className="text-3xl text-titleSelaras">Krecek Jogja</h1>
+                </div>
+                <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
+                {/* content */}
+                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
+                    <img src={krecek} alt="" />
+                    <p className="text-titleSelaras text-xl">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repudiandae rerum, deserunt amet provident illo
+                        laborum quos delectus iste laboriosam accusamus iure
+                        culpa maiores dolorum commodi assumenda quae quasi ipsa!
+                        Laboriosam deserunt consectetur tenetur, pariatur
+                        voluptatibus aut. Quod aliquam reiciendis labore enim
+                        qui alias repudiandae ex, corrupti eligendi corporis
+                        consequuntur hic.
+                    </p>
+                </div>
+            </div>
+            <div className="bg-bodySelaras w-screen h-auto p-10">
+                {/* title */}
+                <div className="w-7/12 mb-5 mx-auto flex justify-end">
+                    <h1 className="text-3xl text-titleSelaras">
+                        Ayam Kampung Ungkep
+                    </h1>
+                </div>
+                <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
+                {/* content */}
+                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
+                    <p className="text-titleSelaras text-xl">
+                        Ayam ungkep adalah salah satu hidangan khas Indonesia
+                        yang terbuat dari ayam yang diolah dengan bumbu-bumbu
+                        tradisional dan kemudian dimasak dalam proses
+                        penggorengan atau pengukuran dengan menggunakan bahan
+                        pelengkap seperti daun salam, serai, dan rempah-rempah
+                        lainnya.
+                    </p>
+                    <img src={ayam} alt="" />
+                </div>
+            </div>
+
+            <div className="bg-bodySelaras w-screen h-auto p-10">
+                {/* title */}
+                <div className="w-7/12 mb-5 mx-auto flex justify-start">
+                    <h1 className="text-3xl text-titleSelaras">
+                        Bebek kampung Ungkep
+                    </h1>
+                </div>
+                <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
+                {/* content */}
+                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
+                    <img src={bebek} alt="" />
+                    <p className="text-titleSelaras text-xl">
+                        Bebek ungkep memiliki cita rasa yang khas dan unik,
+                        dengan perpaduan rasa gurih, manis, dan pedas yang
+                        menggugah selera. Dalam proses pengolahannya, bebek
+                        ungkep direndam dalam bumbu rempah selama beberapa jam
+                        sehingga bumbu meresap ke dalam daging bebek dan
+                        menghasilkan rasa yang lezat.
+                    </p>
+                </div>
+            </div>
+            {/* end detail produk */}
         </div>
     );
 }
