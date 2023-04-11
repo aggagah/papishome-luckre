@@ -8,6 +8,7 @@ import alami from "./assets/alami.png";
 import ayam from "./assets/ayam.png";
 import bebek from "./assets/bebek.png";
 import krecek from "./assets/krecek.png";
+import testimoni from "./assets/testimoni.jpg";
 
 function App() {
     return (
@@ -213,6 +214,25 @@ function App() {
                 </div>
             </div>
             {/* end detail produk */}
+            {/* testimoni*/}
+            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
+                <div>
+                    <h3 className="text-center text-lg text-titleTestimoni font-semibold">TESTIMONI</h3>
+                    <h1 className="text-center text-3xl text-titleSelaras p-3">
+                        Apa kata Mereka Tentang<br/>
+                        PapisHome X Luc'kre
+                    </h1>
+                </div>
+                <div className="flex justify-around items-center w-6/12 mx-auto p-5">
+                    <p className="text-xl text-titleSelaras">
+                        "Ayamnya enaak dan sambelnya mantap. <br/>
+                        Anakku suka" <br/>
+                        <span className="text-sm text-titleTestimoni font-light">NAMA IBU-IBU</span>
+                    </p>
+                    <img className= "border-2 rounded-lg border-titleSelaras" src={testimoni} width={"250"} height={"200"}></img>
+                </div>
+            </div>
+            {/*end testimoni*/}
         </div>
     );
 }
