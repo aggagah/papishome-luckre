@@ -22,7 +22,8 @@ export default {
                 titleSelaras: "#483111",
                 subTitleSelaras: "#483215",
                 pararaphSelaras: "#57534E",
-                bgProdukPil: "#FBF7F2"
+                bgProdukPil: "#FBF7F2",
+                titleTestimoni:"#57534E"
             },
         },
     },
