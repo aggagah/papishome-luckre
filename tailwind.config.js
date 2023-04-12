@@ -23,7 +23,8 @@ export default {
                 subTitleSelaras: "#483215",
                 pararaphSelaras: "#57534E",
                 bgProdukPil: "#FBF7F2",
-                titleTestimoni:"#57534E"
+                titleTestimoni: "#57534E",
+                contactText: "#6F6E5D",
             },
         },
     },

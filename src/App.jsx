@@ -1,6 +1,3 @@
-import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
-import { CgProfile } from "react-icons/cg";
-import logo from "./assets/logo.png";
 import lokal from "./assets/lokal.png";
 import cycle from "./assets/cycle.png";
 import halal from "./assets/halal.png";
@@ -9,37 +6,15 @@ import ayam from "./assets/ayam.png";
 import bebek from "./assets/bebek.png";
 import krecek from "./assets/krecek.png";
 import testimoni from "./assets/testimoni.jpg";
+import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
 
 function App() {
     return (
         <div className="w-screen h-screen overflow-x-hidden">
-            <nav className="h-auto bg-navbarBg w-full px-7 py-5 flex justify-between absolute top-0">
-                <div className="left flex gap-5 items-center">
-                    <img src={logo} className="w-40" />
-                    <ul className="flex gap-2 text-navbarTitle text-lg">
-                        <li>Semua Produk</li>
-                        <li>Kategori</li>
-                    </ul>
-                </div>
-                <div className="right flex gap-5 items-center">
-                    <ul className="flex gap-2 text-navbarTitle text-lg">
-                        <li>Tentang Kami</li>
-                        <li>Kontak Kami</li>
-                    </ul>
-                    <div className="flex gap-5">
-                        <AiOutlineSearch
-                            className="text-navbarIcon"
-                            size={"1.5em"}
-                        />
-                        <CgProfile className="text-navbarIcon" size={"1.5em"} />
-                        <AiOutlineShoppingCart
-                            className="text-navbarIcon"
-                            size={"1.5em"}
-                        />
-                    </div>
-                </div>
-            </nav>
-
+            {/* Navbar */}
+            <Navbar />
+            {/* end navbar */}
             {/* body */}
             <div className="bg-body bg-no-repeat bg-cover bg-center bg-opacity-50 h-screen flex justify-center items-center p-large overflow-hidden">
                 <div className="w-50 flex-col items-center justify-center">
@@ -217,22 +192,35 @@ function App() {
             {/* testimoni*/}
             <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
                 <div>
-                    <h3 className="text-center text-lg text-titleTestimoni font-semibold">TESTIMONI</h3>
+                    <h3 className="text-center text-lg text-titleTestimoni font-semibold">
+                        TESTIMONI
+                    </h3>
                     <h1 className="text-center text-3xl text-titleSelaras p-3">
-                        Apa kata Mereka Tentang<br/>
+                        Apa kata Mereka Tentang
+                        <br />
                         PapisHome X Luc'kre
                     </h1>
                 </div>
                 <div className="flex justify-around items-center w-6/12 mx-auto p-5">
                     <p className="text-xl text-titleSelaras">
-                        "Ayamnya enaak dan sambelnya mantap. <br/>
-                        Anakku suka" <br/>
-                        <span className="text-sm text-titleTestimoni font-light">NAMA IBU-IBU</span>
+                        "Ayamnya enaak dan sambelnya mantap. <br />
+                        Anakku suka" <br />
+                        <span className="text-sm text-titleTestimoni font-light">
+                            NAMA IBU-IBU
+                        </span>
                     </p>
-                    <img className= "border-2 rounded-lg border-titleSelaras" src={testimoni} width={"250"} height={"200"}></img>
+                    <img
+                        className="border-2 rounded-lg border-titleSelaras"
+                        src={testimoni}
+                        width={"250"}
+                        height={"200"}
+                    ></img>
                 </div>
             </div>
             {/*end testimoni*/}
+            {/* contact */}
+            <Contact />
+            {/* end contact */}
         </div>
     );
 }
