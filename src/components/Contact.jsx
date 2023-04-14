@@ -19,7 +19,7 @@ function Contact() {
                         className="mx-auto text-contactText"
                         size={"1.5em"}
                     />
-                    <p className="text-contactText text-lg">Pasir luyu</p>
+                    <p className="text-contactText text-lg">Buah Batu</p>
                 </div>
                 {/* phone */}
                 <div>

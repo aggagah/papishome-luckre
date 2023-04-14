@@ -8,6 +8,8 @@ import krecek from "./assets/krecek.png";
 import testimoni from "./assets/testimoni.jpg";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 function App() {
     return (
@@ -221,6 +223,46 @@ function App() {
             {/* contact */}
             <Contact />
             {/* end contact */}
+            {/*keterangan*/}
+            <div className="flex-col w-screen bg-bodyKet h-auto p-10">
+                <div className="flex justify-around w-9/12 mx-auto">
+                    <div className="w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">PapisHome X Luc'kre</h3>
+                        <p className="text-pararaphSelaras">Rahsa Nusantara meracik kebaikan alam, herba, dan rempah
+                            untuk keseharian sehat berkesadaran generasi kini dan nanti. 
+                            Sejak 2016, Rahsa Nusantara mengupayakan proses yang etis dan 
+                            bertanggung jawab, dengan mengedepankan bahan-bahan lokal yang alami, 
+                            kesadaran lingkungan, serta pemberdayaan.
+                        </p>
+                    </div>
+                    <div className="w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">Open Hours</h3>
+                        <p className="text-center text-pararaphSelaras">
+                            Senin       7AM - 9PM<br/>
+                            Selasa      7AM - 9PM<br/>
+                            Rabu        7AM - 9PM<br/>
+                            Kamis       7AM - 9PM<br/>
+                            Jumat       7AM - 9PM<br/>
+                            Sabtu       9AM - 8PM<br/>
+                            Minggu      9AM - 8PM<br/>
+                        </p>
+                    </div>
+                    <div className="w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">Sosial Media</h3>
+                        <div className="w-5/12 mx-auto flex justify-around mt-10">
+                            <BsInstagram className="text-pararaphSelaras" size={"1.5em"}/>
+                            <BsWhatsapp className="text-pararaphSelaras" size={"1.5em"}/>
+                            <BsInstagram className="text-pararaphSelaras" size={"1.5em"}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*end keterangan*/}
+            {/*cosing*/}
+            <div className="bg-titleSelaras w-screen h-auto p-7">
+                <p className="text-center text-white">© PapiesHome X Luc’kre 2023</p>
+            </div>
+            {/*end closing*/}
         </div>
     );
 }
