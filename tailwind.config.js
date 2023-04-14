@@ -25,6 +25,7 @@ export default {
                 bgProdukPil: "#FBF7F2",
                 titleTestimoni: "#57534E",
                 contactText: "#6F6E5D",
+                bodyKet: "#D6D5C5"
             },
         },
     },
