@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                body: "url('./src/assets/bgbody.jpg')",
+                body: "url('/src/assets/bgbody.png')",
             },
             height: {
                 selaras: "300px",
@@ -25,7 +25,7 @@ export default {
                 bgProdukPil: "#FBF7F2",
                 titleTestimoni: "#57534E",
                 contactText: "#6F6E5D",
-                bodyKet: "#D6D5C5"
+                bodyKet: "#D6D5C5",
             },
         },
     },
