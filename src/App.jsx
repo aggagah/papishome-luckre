@@ -19,11 +19,11 @@ function App() {
             {/* end navbar */}
             {/* body */}
             <div className="bg-body bg-no-repeat bg-cover bg-center bg-opacity-50 h-screen flex justify-center items-center p-large overflow-hidden">
-                <div className="w-50 flex-col items-center justify-center">
-                    <h1 className="text-bodyText text-center text-5xl">
+                <div className="w-full lg:w-8/12 flex-col items-center justify-center">
+                    <h1 className="text-bodyText text-center text-3xl lg:text-5xl">
                         WELCOME
                     </h1>
-                    <p className="text-center text-bodyText text-xl">
+                    <p className="text-center text-bodyText text-sm mt-5 lg:mt-0 lg:text-xl">
                         Selamat datang di PapisHome X Luc’kre di mana anda dapat
                         menemukan berbagai pilihan hidangan lezat. Kami
                         mengutamakan kualitas bahan makanan yang digunakan dalam
@@ -39,11 +39,11 @@ function App() {
 
             {/* selaras */}
             <div className="w-screen bg-bodySelaras p-10 flex-col items-center justify-between">
-                <h1 className="text-center text-3xl text-titleSelaras">
+                <h1 className="text-center text-2xl lg:text-3xl text-titleSelaras">
                     Selaras dengan kebaikan alam
                 </h1>
-                <div className="flex justify-between pt-10">
-                    <div className="flex-col">
+                <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between pt-10">
+                    <div className="flex flex-col">
                         <img src={lokal} alt="" className="mx-auto" />
                         <div className="flex-col">
                             <h5 className="text-center text-subTitleSelaras">
@@ -93,31 +93,31 @@ function App() {
             </div>
             {/* end selaras */}
             {/* Produk pilihan */}
-            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
-                <div className="w-9/12 mb-10 mx-auto">
-                    <h1 className="text-3xl text-titleSelaras">
+            <div className="flex flex-col w-screen bg-bgProdukPil h-auto p-10">
+                <div className="w-9/12 mb-10 mx-auto text-center lg:text-left">
+                    <h1 className="text-2xl lg:text-3xl text-titleSelaras">
                         Produk Pilihan
                     </h1>
-                    <p className="text-pararaphSelaras text-lg">
+                    <p className="text-pararaphSelaras text-base lg:text-lg">
                         Temukan rasa Nusantara disini
                     </p>
                 </div>
-                <div className="flex justify-evenly w-full mx-auto">
+                <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-0 justify-evenly w-full mx-auto">
                     <div>
                         <img src={krecek} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-xl lg:text-2xl p-2 rounded-xl mt-1">
                             Krecek Jogja
                         </p>
                     </div>
                     <div>
                         <img src={bebek} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-xl lg:text-2xl p-2 rounded-xl mt-1">
                             Bebek Ungkep
                         </p>
                     </div>
                     <div>
                         <img src={ayam} alt="" />
-                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-2xl p-2 rounded-xl mt-1">
+                        <p className="text-center bg-navbarIcon text-bodyText w-9/12 mx-auto text-xl lg:text-2xl p-2 rounded-xl mt-1">
                             Ayam Kampung
                         </p>
                     </div>
@@ -128,14 +128,16 @@ function App() {
             {/* detail produk*/}
             <div className="bg-bodySelaras w-screen h-auto p-10">
                 {/* title */}
-                <div className="w-7/12 mb-5 mx-auto flex justify-start">
-                    <h1 className="text-3xl text-titleSelaras">Krecek Jogja</h1>
+                <div className="w-7/12 mb-5 mx-auto flex justify-center lg:justify-start">
+                    <h1 className="text-2xl lg:text-3xl text-titleSelaras text-center lg:text-left">
+                        Krecek Jogja
+                    </h1>
                 </div>
                 <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
                 {/* content */}
-                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
+                <div className="flex flex-col lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
                     <img src={krecek} alt="" />
-                    <p className="text-titleSelaras text-xl">
+                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Repudiandae rerum, deserunt amet provident illo
                         laborum quos delectus iste laboriosam accusamus iure
@@ -149,15 +151,15 @@ function App() {
             </div>
             <div className="bg-bodySelaras w-screen h-auto p-10">
                 {/* title */}
-                <div className="w-7/12 mb-5 mx-auto flex justify-end">
-                    <h1 className="text-3xl text-titleSelaras">
+                <div className="w-7/12 mb-5 mx-auto flex justify-center lg:justify-end">
+                    <h1 className="text-2xl lg:text-3xl text-titleSelaras text-center lg:text-right">
                         Ayam Kampung Ungkep
                     </h1>
                 </div>
                 <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
                 {/* content */}
-                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
-                    <p className="text-titleSelaras text-xl">
+                <div className="flex flex-col-reverse lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
+                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
                         Ayam ungkep adalah salah satu hidangan khas Indonesia
                         yang terbuat dari ayam yang diolah dengan bumbu-bumbu
                         tradisional dan kemudian dimasak dalam proses
@@ -171,16 +173,16 @@ function App() {
 
             <div className="bg-bodySelaras w-screen h-auto p-10">
                 {/* title */}
-                <div className="w-7/12 mb-5 mx-auto flex justify-start">
-                    <h1 className="text-3xl text-titleSelaras">
+                <div className="w-7/12 mb-5 mx-auto flex justify-center lg:justify-start">
+                    <h1 className="text-2xl lg:text-3xl text-titleSelaras text-center lg:text-right">
                         Bebek kampung Ungkep
                     </h1>
                 </div>
                 <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
                 {/* content */}
-                <div className="flex justify-around items-center w-7/12 mx-auto gap-20">
+                <div className="flex flex-col lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
                     <img src={bebek} alt="" />
-                    <p className="text-titleSelaras text-xl">
+                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
                         Bebek ungkep memiliki cita rasa yang khas dan unik,
                         dengan perpaduan rasa gurih, manis, dan pedas yang
                         menggugah selera. Dalam proses pengolahannya, bebek
@@ -194,17 +196,17 @@ function App() {
             {/* testimoni*/}
             <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
                 <div>
-                    <h3 className="text-center text-lg text-titleTestimoni font-semibold">
+                    <h3 className="text-center text-xl text-titleTestimoni font-semibold">
                         TESTIMONI
                     </h3>
-                    <h1 className="text-center text-3xl text-titleSelaras p-3">
+                    <h1 className="text-center text-2xl lg:text-3xl text-titleSelaras p-3">
                         Apa kata Mereka Tentang
                         <br />
                         PapisHome X Luc'kre
                     </h1>
                 </div>
-                <div className="flex justify-around items-center w-6/12 mx-auto p-5">
-                    <p className="text-xl text-titleSelaras">
+                <div className="flex justify-around items-center w-6/12 mx-auto p-5 gap-5 lg:gap-0">
+                    <p className="text-base lg:text-xl text-titleSelaras">
                         "Ayamnya enaak dan sambelnya mantap. <br />
                         Anakku suka" <br />
                         <span className="text-sm text-titleTestimoni font-light">
@@ -224,43 +226,69 @@ function App() {
             <Contact />
             {/* end contact */}
             {/*keterangan*/}
-            <div className="flex-col w-screen bg-bodyKet h-auto p-10">
-                <div className="flex justify-around w-9/12 mx-auto">
-                    <div className="w-1/4">
-                        <h3 className="font-bold text-titleSelaras text-center">PapisHome X Luc'kre</h3>
-                        <p className="text-pararaphSelaras">Rahsa Nusantara meracik kebaikan alam, herba, dan rempah
-                            untuk keseharian sehat berkesadaran generasi kini dan nanti. 
-                            Sejak 2016, Rahsa Nusantara mengupayakan proses yang etis dan 
-                            bertanggung jawab, dengan mengedepankan bahan-bahan lokal yang alami, 
+            <div className="flex-col w-screen bg-bodyKet h-auto p-3 lg:p-10">
+                <div className="flex justify-around w-full lg:w-9/12 mx-auto">
+                    <div className="w-1/3 lg:w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">
+                            PapisHome X Luc'kre
+                        </h3>
+                        <p className="text-pararaphSelaras text-sm lg:text-base text-center">
+                            Rahsa Nusantara meracik kebaikan alam, herba, dan
+                            rempah untuk keseharian sehat berkesadaran generasi
+                            kini dan nanti. Sejak 2016, Rahsa Nusantara
+                            mengupayakan proses yang etis dan bertanggung jawab,
+                            dengan mengedepankan bahan-bahan lokal yang alami,
                             kesadaran lingkungan, serta pemberdayaan.
                         </p>
                     </div>
-                    <div className="w-1/4">
-                        <h3 className="font-bold text-titleSelaras text-center">Open Hours</h3>
-                        <p className="text-center text-pararaphSelaras">
-                            Senin       7AM - 9PM<br/>
-                            Selasa      7AM - 9PM<br/>
-                            Rabu        7AM - 9PM<br/>
-                            Kamis       7AM - 9PM<br/>
-                            Jumat       7AM - 9PM<br/>
-                            Sabtu       9AM - 8PM<br/>
-                            Minggu      9AM - 8PM<br/>
+                    <div className="w-1/3 lg:w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">
+                            Open Hours
+                        </h3>
+                        <p className="text-pararaphSelaras text-sm lg:text-base text-center">
+                            Senin 7AM - 9PM
+                            <br />
+                            Selasa 7AM - 9PM
+                            <br />
+                            Rabu 7AM - 9PM
+                            <br />
+                            Kamis 7AM - 9PM
+                            <br />
+                            Jumat 7AM - 9PM
+                            <br />
+                            Sabtu 9AM - 8PM
+                            <br />
+                            Minggu 9AM - 8PM
+                            <br />
                         </p>
                     </div>
-                    <div className="w-1/4">
-                        <h3 className="font-bold text-titleSelaras text-center">Sosial Media</h3>
-                        <div className="w-5/12 mx-auto flex justify-around mt-10">
-                            <BsInstagram className="text-pararaphSelaras" size={"1.5em"}/>
-                            <BsWhatsapp className="text-pararaphSelaras" size={"1.5em"}/>
-                            <BsInstagram className="text-pararaphSelaras" size={"1.5em"}/>
+                    <div className="w-1/3 lg:w-1/4">
+                        <h3 className="font-bold text-titleSelaras text-center">
+                            Sosial Media
+                        </h3>
+                        <div className="w-full lg:w-5/12 mx-auto flex flex-col lg:flex-row justify-around items-center lg:items-left mt-10 gap-5 lg:gap-0">
+                            <BsInstagram
+                                className="text-pararaphSelaras"
+                                size={"1.5em"}
+                            />
+                            <BsWhatsapp
+                                className="text-pararaphSelaras"
+                                size={"1.5em"}
+                            />
+                            <BsInstagram
+                                className="text-pararaphSelaras"
+                                size={"1.5em"}
+                            />
                         </div>
                     </div>
                 </div>
             </div>
             {/*end keterangan*/}
             {/*cosing*/}
-            <div className="bg-titleSelaras w-screen h-auto p-7">
-                <p className="text-center text-white">© PapiesHome X Luc’kre 2023</p>
+            <div className="bg-titleSelaras w-screen h-auto p-5 lg:p-7">
+                <p className="text-center text-white">
+                    © PapiesHome X Luc’kre {new Date().getFullYear()}
+                </p>
             </div>
             {/*end closing*/}
         </div>
