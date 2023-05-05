@@ -27,6 +27,16 @@ export default {
                 contactText: "#6F6E5D",
                 bodyKet: "#D6D5C5",
             },
+            fontFamily: {
+                philo: ["Philosopher", "sans-serif"],
+            },
+            fontWeight: {
+                philoRegular: 400,
+                philoBold: 700,
+            },
+            width: {
+                testiCard: "300px",
+            },
         },
     },
     plugins: [],

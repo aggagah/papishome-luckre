@@ -13,14 +13,14 @@ import { BsInstagram } from "react-icons/bs";
 
 function App() {
     return (
-        <div className="w-screen h-screen overflow-x-hidden">
+        <div className="w-screen h-screen overflow-x-hidden font-philo scroll-smooth">
             {/* Navbar */}
             <Navbar />
             {/* end navbar */}
             {/* body */}
             <div className="bg-body bg-no-repeat bg-cover bg-center bg-opacity-50 h-screen flex justify-center items-center p-large overflow-hidden">
                 <div className="w-full lg:w-8/12 flex-col items-center justify-center">
-                    <h1 className="text-bodyText text-center text-3xl lg:text-5xl">
+                    <h1 className="text-bodyText text-center text-3xl lg:text-5xl font-philoRegular">
                         WELCOME
                     </h1>
                     <p className="text-center text-bodyText text-sm mt-5 lg:mt-0 lg:text-xl">
@@ -137,16 +137,22 @@ function App() {
                 {/* content */}
                 <div className="flex flex-col lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
                     <img src={krecek} alt="" />
-                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Repudiandae rerum, deserunt amet provident illo
-                        laborum quos delectus iste laboriosam accusamus iure
-                        culpa maiores dolorum commodi assumenda quae quasi ipsa!
-                        Laboriosam deserunt consectetur tenetur, pariatur
-                        voluptatibus aut. Quod aliquam reiciendis labore enim
-                        qui alias repudiandae ex, corrupti eligendi corporis
-                        consequuntur hic.
-                    </p>
+                    <div className="flex flex-col justify-center overflow-x-auto">
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
+                            Krecek Jojga adalah hidangan khas jogja yang
+                            memiliki cita rasa khas nusantara. Terbuat dari
+                            kulit sapi yang dipotong tipis dan dijadikan
+                            kerupuk. Kerupuk tersebut kemudian diolah dengan
+                            bumbu rempah agar menjadi krecek. Makanan krecek
+                            memiliki rasa yang khas, yaitu pedas dan gurih.
+                            Selain itu, krecek juga memiliki aroma rempah yang
+                            khas dan menggugah selera. Biasa dihidangkan dengan
+                            gudeg dan makanan lainnya.
+                        </p>
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify pt-5">
+                            Rp 30.000 / 250gr
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="bg-bodySelaras w-screen h-auto p-10">
@@ -159,14 +165,23 @@ function App() {
                 <hr class="w-7/12 h-1 mx-auto bg-navbarIcon border-0 rounded mb-5"></hr>
                 {/* content */}
                 <div className="flex flex-col-reverse lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
-                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
-                        Ayam ungkep adalah salah satu hidangan khas Indonesia
-                        yang terbuat dari ayam yang diolah dengan bumbu-bumbu
-                        tradisional dan kemudian dimasak dalam proses
-                        penggorengan atau pengukuran dengan menggunakan bahan
-                        pelengkap seperti daun salam, serai, dan rempah-rempah
-                        lainnya.
-                    </p>
+                    <div className="flex flex-col justify-center overflow-x-auto">
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
+                            Ayam ungkep adalah salah satu hidangan khas
+                            Indonesia yang terbuat dari ayam yang diolah dengan
+                            bumbu-bumbu tradisional dan kemudian dimasak dalam
+                            proses penggorengan atau pengukuran dengan
+                            menggunakan bahan pelengkap seperti daun salam,
+                            serai, dan rempah-rempah lainnya.
+                        </p>
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify pt-5">
+                            Rp 90.000 / ekor <br />
+                            <span className="text-sm lg:text-base">
+                                include sambel korek, lalapan daun pepaya, dan
+                                ati ampela
+                            </span>
+                        </p>
+                    </div>
                     <img src={ayam} alt="" />
                 </div>
             </div>
@@ -182,19 +197,28 @@ function App() {
                 {/* content */}
                 <div className="flex flex-col lg:flex-row justify-around items-center w-7/12 mx-auto gap-5 lg:gap-20">
                     <img src={bebek} alt="" />
-                    <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
-                        Bebek ungkep memiliki cita rasa yang khas dan unik,
-                        dengan perpaduan rasa gurih, manis, dan pedas yang
-                        menggugah selera. Dalam proses pengolahannya, bebek
-                        ungkep direndam dalam bumbu rempah selama beberapa jam
-                        sehingga bumbu meresap ke dalam daging bebek dan
-                        menghasilkan rasa yang lezat.
-                    </p>
+                    <div className="flex flex-col justify-center overflow-x-auto">
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify">
+                            Bebek ungkep memiliki cita rasa yang khas dan unik,
+                            dengan perpaduan rasa gurih, manis, dan pedas yang
+                            menggugah selera. Dalam proses pengolahannya, bebek
+                            ungkep direndam dalam bumbu rempah selama beberapa
+                            jam sehingga bumbu meresap ke dalam daging bebek dan
+                            menghasilkan rasa yang lezat.
+                        </p>
+                        <p className="text-titleSelaras text-base lg:text-xl text-center lg:text-justify pt-5">
+                            Rp 100.000 / ekor <br />
+                            <span className="text-sm lg:text-base">
+                                include sambel korek, lalapan daun pepaya, dan
+                                ati ampela
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
             {/* end detail produk */}
             {/* testimoni*/}
-            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10">
+            <div className="flex-col w-screen bg-bgProdukPil h-auto p-10 overflow-x-auto">
                 <div>
                     <h3 className="text-center text-xl text-titleTestimoni font-semibold">
                         TESTIMONI
@@ -205,25 +229,87 @@ function App() {
                         PapisHome X Luc'kre
                     </h1>
                 </div>
-                <div className="flex justify-around items-center w-6/12 mx-auto p-5 gap-5 lg:gap-0">
-                    <p className="text-base lg:text-xl text-titleSelaras">
-                        "Ayamnya enaak dan sambelnya mantap. <br />
-                        Anakku suka" <br />
-                        <span className="text-sm text-titleTestimoni font-light">
-                            NAMA IBU-IBU
-                        </span>
-                    </p>
-                    <img
-                        className="border-2 rounded-lg border-titleSelaras"
-                        src={testimoni}
-                        width={"250"}
-                        height={"200"}
-                    ></img>
+                <div className="flex w-5/6 h-[400px] overflow-x-scroll mx-auto scroll-smooth scroll whitespace-nowrap gap-10 px-2">
+                    <div className="flex flex-col justify-center items-center h-[325px] w-full mr-0 lg:mr-20 lg:gap-0 whitespace-nowrap text-center">
+                        <img
+                            className="border-2 rounded-lg border-titleSelaras"
+                            src={testimoni}
+                            width={"150"}
+                            height={"100"}
+                        ></img>
+                        <p className="text-base lg:text-xl text-titleSelaras">
+                            "Ayamnya enaak dan sambelnya mantap. <br />
+                            Anakku suka" <br />
+                            <span className="text-sm text-titleTestimoni font-light">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center h-[325px] w-[300px] mr-0 lg:mr-20 lg:gap-0 whitespace-nowrap text-center">
+                        <img
+                            className="border-2 rounded-lg border-titleSelaras"
+                            src={testimoni}
+                            width={"150"}
+                            height={"100"}
+                        ></img>
+                        <p className="text-base lg:text-xl text-titleSelaras">
+                            "Ayamnya enaak dan sambelnya mantap. <br />
+                            Anakku suka" <br />
+                            <span className="text-sm text-titleTestimoni font-light">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center h-[325px] w-[300px] mr-0 lg:mr-20 lg:gap-0 whitespace-nowrap text-center">
+                        <img
+                            className="border-2 rounded-lg border-titleSelaras"
+                            src={testimoni}
+                            width={"150"}
+                            height={"100"}
+                        ></img>
+                        <p className="text-base lg:text-xl text-titleSelaras">
+                            "Ayamnya enaak dan sambelnya mantap. <br />
+                            Anakku suka" <br />
+                            <span className="text-sm text-titleTestimoni font-light">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center h-[325px] w-[300px] mr-0 lg:mr-20 lg:gap-0 whitespace-nowrap text-center">
+                        <img
+                            className="border-2 rounded-lg border-titleSelaras"
+                            src={testimoni}
+                            width={"150"}
+                            height={"100"}
+                        ></img>
+                        <p className="text-base lg:text-xl text-titleSelaras">
+                            "Ayamnya enaak dan sambelnya mantap. <br />
+                            Anakku suka" <br />
+                            <span className="text-sm text-titleTestimoni font-light">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center h-[325px] w-[300px] mr-0 lg:mr-20 lg:gap-0 whitespace-nowrap text-center">
+                        <img
+                            className="border-2 rounded-lg border-titleSelaras"
+                            src={testimoni}
+                            width={"150"}
+                            height={"100"}
+                        ></img>
+                        <p className="text-base lg:text-xl text-titleSelaras">
+                            "Ayamnya enaak dan sambelnya mantap. <br />
+                            Anakku suka" <br />
+                            <span className="text-sm text-titleTestimoni font-light">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
             {/*end testimoni*/}
             {/* contact */}
-            <Contact />
+            {/* <Contact /> */}
             {/* end contact */}
             {/*keterangan*/}
             <div className="flex-col w-screen bg-bodyKet h-auto p-3 lg:p-10">
@@ -233,7 +319,7 @@ function App() {
                             PapisHome X Luc'kre
                         </h3>
                         <p className="text-pararaphSelaras text-sm lg:text-base text-center">
-                            Rahsa Nusantara meracik kebaikan alam, herba, dan
+                            Rasa Nusantara meracik kebaikan alam, herba, dan
                             rempah untuk keseharian sehat berkesadaran generasi
                             kini dan nanti. Sejak 2016, Rahsa Nusantara
                             mengupayakan proses yang etis dan bertanggung jawab,
@@ -267,18 +353,24 @@ function App() {
                             Sosial Media
                         </h3>
                         <div className="w-full lg:w-5/12 mx-auto flex flex-col lg:flex-row justify-around items-center lg:items-left mt-10 gap-5 lg:gap-0">
-                            <BsInstagram
-                                className="text-pararaphSelaras"
-                                size={"1.5em"}
-                            />
-                            <BsWhatsapp
-                                className="text-pararaphSelaras"
-                                size={"1.5em"}
-                            />
-                            <BsInstagram
-                                className="text-pararaphSelaras"
-                                size={"1.5em"}
-                            />
+                            <a href="https://www.instagram.com/papis.home/">
+                                <BsInstagram
+                                    className="text-pararaphSelaras"
+                                    size={"1.5em"}
+                                />
+                            </a>
+                            <a href="https://wa.link/y32067">
+                                <BsWhatsapp
+                                    className="text-pararaphSelaras"
+                                    size={"1.5em"}
+                                />
+                            </a>
+                            <a href="https://www.instagram.com/luc.kre/">
+                                <BsInstagram
+                                    className="text-pararaphSelaras"
+                                    size={"1.5em"}
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
