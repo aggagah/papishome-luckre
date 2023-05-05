@@ -257,8 +257,10 @@ function App() {
                             height={"100"}
                         ></img>
                         <p className="text-base lg:text-xl text-titleSelaras">
-                            "kreceknya luc'kre dahlah jodoh dunia akhirat<br/>
-                            rela ga makan nasi demi makan ini dirumah"<br/>
+                            "kreceknya luc'kre dahlah jodoh dunia akhirat
+                            <br />
+                            rela ga makan nasi demi makan ini dirumah"
+                            <br />
                             <span className="text-sm text-titleTestimoni font-light">
                                 Customer
                             </span>
@@ -273,7 +275,7 @@ function App() {
                         ></img>
                         <p className="text-base lg:text-xl text-titleSelaras">
                             "Enak pisan empuk banget <br />
-                            Bumbunya ampe meresap ke dalam2nya"  <br />
+                            Bumbunya ampe meresap ke dalam2nya" <br />
                             <span className="text-sm text-titleTestimoni font-light">
                                 Customer
                             </span>
@@ -287,7 +289,7 @@ function App() {
                             height={"100"}
                         ></img>
                         <p className="text-base lg:text-xl text-titleSelaras">
-                            "Sayur kreceknya enak bu" <br/>
+                            "Sayur kreceknya enak bu" <br />
                             <span className="text-sm text-titleTestimoni font-light">
                                 Customer
                             </span>
@@ -301,9 +303,10 @@ function App() {
                             height={"100"}
                         ></img>
                         <p className="text-base lg:text-xl text-titleSelaras">
-                            "Gak nyesel beli ini ndol pisan empuk banget<br/>
-                            bumbunya berasa pisan sammbelnya nendang abis <br/>
-                            pokonya wajib beli bebek terenak" <br/>
+                            "Gak nyesel beli ini ndol pisan empuk banget
+                            <br />
+                            bumbunya berasa pisan sammbelnya nendang abis <br />
+                            pokonya wajib beli bebek terenak" <br />
                             <span className="text-sm text-titleTestimoni font-light">
                                 Customer
                             </span>
@@ -317,7 +320,7 @@ function App() {
             {/* end contact */}
             {/*keterangan*/}
             <div className="flex-col w-screen bg-bodyKet h-auto p-3 lg:p-10">
-                <div className="flex justify-around w-full lg:w-9/12 mx-auto h-[200px]">
+                <div className="flex justify-around w-full lg:w-9/12 mx-auto">
                     <div className="w-1/3 lg:w-1/4 h-full flex flex-col justify-start">
                         <h3 className="font-bold text-titleSelaras text-center mb-5">
                             PapisHome X Luc'kre
